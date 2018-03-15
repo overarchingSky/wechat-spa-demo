@@ -76,7 +76,7 @@ cd wechat-spa && npm run dev
 # 运行Laravel 
 composer install && cp .env.example .env && php artisan serve
 更改 routes/web.php 里面的 appid 和appsecret 为你自己的. 
-![](https://github.com/clearcodecn/wechat-spa-demo/blob/master/example.png)
+![](https://raw.githubusercontent.com/clearcodecn/wechat-spa-demo/master/example.png)
 ```
 
 
