@@ -1,6 +1,6 @@
 ## 单页服务端获取 openid 示例
 
-### [wechat-spa](https://github.com/clearcodecn/wechat-spa-demo/wechat-spa) 为vue单页应用 
+### [wechat-spa](https://github.com/clearcodecn/wechat-spa-demo/tree/master/wechat-spa) 为vue单页应用 
 ### 外部项目是Laravel项目，可以抛开一切看 routes/web.php 的代码，
 ### 只是调用了微信端获取用户信息接口. 任何服务端语言都能实现
 
@@ -76,7 +76,7 @@ cd wechat-spa && npm run dev
 # 运行Laravel 
 composer install && cp .env.example .env && php artisan serve
 更改 routes/web.php 里面的 appid 和appsecret 为你自己的. 
-![image](https://github.com/clearcodecn/wechat-spa-demo/example.png)
+![](https://github.com/clearcodecn/wechat-spa-demo/blob/master/example.png)
 ```
 
 
