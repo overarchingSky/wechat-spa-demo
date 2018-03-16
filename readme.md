@@ -73,6 +73,6 @@ cd wechat-spa && npm run dev
 composer install 
 php -S localhost:8000 
 
-![image](https://github.com/clearcodecn/raw/master/wechat-spa-demo/example.png)
+![](https://raw.githubusercontent.com/clearcodecn/wechat-spa-demo/master/example.png)
 ```
 ![image](https://github.com/rookiejin/swoole/raw/master/images/app.png)
