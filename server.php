@@ -41,4 +41,4 @@ $responseInfo = [];
 $responseInfo ['basic'] = $res ;
 $responseInfo ['info'] = json_decode($res2->getBody()->getContents(),true);
 
-exit($responseInfo);
+exit(json_encode($responseInfo));
