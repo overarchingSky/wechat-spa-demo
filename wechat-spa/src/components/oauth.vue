@@ -31,4 +31,85 @@
       }
     }
   }
+
+
+
+
+
+  // app.js
+  App({
+    onLaunch: function () {
+      wx.request({
+        url: 'test.php', //仅为示例，并非真实的接口地址
+        data: {
+        },
+        success: function(res) {
+          this.globalData.employId = res.employId;
+          //由于这里是网络请求，可能会在 Page.onLoad 之后才返回
+          // 所以此处加入 callback 以防止这种情况
+          if (this.employIdCallback){
+            this.employIdCallback(employId);
+          }
+        }
+      })
+    },
+    globalData: {
+      employId: ''
+    }
+  })
+  //index.js
+  //获取应用实例
+  const app = getApp()
+  Page({
+    data: {
+      albumDisabled: true,
+      bindDisabled: false
+    },
+    onLoad: function () {
+    }
+  })
+  app.employIdCallback = employId => {
+    if (employId != '') {
+      this.setData({
+        albumDisabled: false,
+        bindDisabled: true
+      });
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>

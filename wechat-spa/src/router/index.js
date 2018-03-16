@@ -46,7 +46,7 @@ router.beforeEach((to, from,next) => {
           query[tmp[0]] = tmp[1];
         }
         if(query.state != null && query.code != null) {
-          axios.get("http://127.0.0.1:8000/getInfoByCode/" + query.code)
+          axios.get("http://127.0.0.1:8000/server.php?code=" + query.code)
             .then((res) => {
               localStorage.setItem("openid",res.data.basic.openid);
               // 需要构造一下.
